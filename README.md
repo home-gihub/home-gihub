@@ -1,18 +1,15 @@
-```
-|_  _ || _ |
-| |(/_||(_)o
+<p id="demo"></p>
 
-i make things 
-l like using html js and css (even though i'm not very good at them)
+<script>
+var i = 0;
+var txt = 'Hi, i make things go check my website, k thx bye';
+var speed = 50;
 
-+-website-----------------------+
-|https://www.homegihub.github.io|
-+-------------------------------+
-
-👋------👋------👋--👋👋👋-
-👋--------👋--👋----👋-----
-👋👋👋-----👋------👋👋👋-
-👋--👋-----👋------👋------
-👋👋👋-----👋------👋👋👋-
-
-```
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
